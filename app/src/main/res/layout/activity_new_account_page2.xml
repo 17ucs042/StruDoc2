@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewAccountPage1"
+    android:background="@drawable/gradient_background">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="New Account"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/go_back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="23sp"
+            android:textColor="#ff0099cc"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/back_navigate"
+            android:drawableStart="@drawable/back_navigate"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/first_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_account_views_background"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="45dp">
+
+        <EditText
+            android:id="@+id/first_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_toEndOf="@id/first_name_text_view"
+            android:layout_toRightOf="@id/first_name_text_view"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/first_name_text_view"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="20sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/last_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_account_views_background"
+        android:layout_below="@id/first_name_layout">
+
+        <EditText
+            android:id="@+id/last_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_toEndOf="@id/last_name_text_view"
+            android:layout_toRightOf="@id/last_name_text_view"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/last_name_text_view"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="20sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/company_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_account_views_background"
+        android:layout_below="@id/last_name_layout">
+
+        <EditText
+            android:id="@+id/company_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_toEndOf="@id/company_text_view"
+            android:layout_toRightOf="@id/company_text_view"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/company_text_view"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:textSize="20sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/company_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_account_views_background"
+        android:layout_below="@id/company_layout">
+
+        <EditText
+            android:id="@+id/company_type_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_toEndOf="@id/company_type_text_view"
+            android:layout_toRightOf="@id/company_type_text_view"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/company_type_text_view"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Company Type"
+            android:textSize="20sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_account_views_background"
+        android:layout_below="@id/company_type_layout">
+
+        <EditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@id/phone_text_view"
+            android:layout_toRightOf="@id/phone_text_view"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/phone_text_view"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="20sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/create_account_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_layout"
+        android:text="Create Account"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/new_account_views_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/create_account_text"
+        android:layout_marginTop="40dp"
+        android:text="@string/terms_n_cond_text"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#000"/>
+</RelativeLayout>
